@@ -2,8 +2,8 @@ import sqlite3
 from streamlit import status
 from fastapi import APIRouter, HTTPException
 from typing import List
-from online_recipe_book.database import get_db_connection
-from online_recipe_book.models.category import Category, CategoryCreate
+from database import get_db_connection
+from models.category import Category, CategoryCreate
 
 router = APIRouter()
 routerName = "/categories/"

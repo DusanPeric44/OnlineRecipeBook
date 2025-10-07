@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from online_recipe_book.models.recipe import Recipe, RecipeCreate
-from online_recipe_book.database import get_db_connection
+from models.recipe import Recipe, RecipeCreate
+from database import get_db_connection
 
 # Create an APIRouter instance for recipe-related routes
 router = APIRouter()
